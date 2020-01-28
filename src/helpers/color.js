@@ -69,4 +69,10 @@ export const red = {
   hsv: { h: 0, s: 1, v: 1, a: 1 },
 }
 
-export default exports
+export default {
+  simpleCheckForValidColor,
+  toState,
+  isValidHex,
+  getContrastingColor,
+  red,
+}
