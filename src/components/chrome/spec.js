@@ -30,7 +30,7 @@ test('Chrome onChange events correctly', () => {
 
   // check the Alpha component
   const alphaCommon = tree.find(Alpha)
-  alphaCommon.at(0).childAt(2).simulate('mouseDown', {
+  alphaCommon.at(0).childAt(0).childAt(2).simulate('mouseDown', {
     pageX: 100,
     pageY: 10,
   })

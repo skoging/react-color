@@ -33,7 +33,7 @@ test('Alpha onChange events correctly', () => {
   )
   expect(changeSpy).toHaveBeenCalledTimes(0)
   const alphaCommon = tree.find(CommonAlpha)
-  alphaCommon.at(0).childAt(2).simulate('mouseDown', {
+  alphaCommon.at(0).childAt(0).childAt(2).simulate('mouseDown', {
     pageX: 100,
     pageY: 10,
   })

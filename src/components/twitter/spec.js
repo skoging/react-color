@@ -45,7 +45,7 @@ test('Twitter onChange events correctly', () => {
   )
   expect(changeSpy).toHaveBeenCalledTimes(0)
   const swatches = tree.find(Swatch)
-  swatches.at(0).childAt(0).simulate('click')
+  swatches.at(0).childAt(0).childAt(0).simulate('click')
 
   expect(changeSpy).toHaveBeenCalled()
 })
@@ -59,7 +59,7 @@ test('Twitter with onSwatchHover events correctly', () => {
   )
   expect(hoverSpy).toHaveBeenCalledTimes(0)
   const swatches = tree.find(Swatch)
-  swatches.at(0).childAt(0).simulate('mouseOver')
+  swatches.at(0).childAt(0).childAt(0).simulate('mouseOver')
 
   expect(hoverSpy).toHaveBeenCalled()
 })
